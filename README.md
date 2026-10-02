@@ -1,16 +1,26 @@
-# React + Vite
+# Metka Лендинг.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание проекта
+Первый **пет-проект**, который пишется мной самостоятельно с использованием современных методов разработки. 
+**Лендинг страница для мини-магазина metka•**
 
-Currently, two official plugins are available:
+### Ииспользуемые зависимости:
+![React](https://img.icons8.ru/?size=80&id=asWSSTBrDlTW&format=png&color=000000)
+![Vite](https://img.icons8.ru/?size=80&id=dJjTWMogzFzg&format=png&color=000000)
+![GSAP](https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/gsap.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+### Основная задача: 
+Вызвать **wow-эффект** у лид-клиента с последующим переводом трафика на сайт или в telegram канал.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+___
 
-## Expanding the ESLint configuration
+## Описание магазина
+**Metka - это онлайн магазин в г. Санкт-Петербурге в котором клиенты могут найти:**
+- Вещи
+- Ручную работу
+- Открытки
+- Принты
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Логотип
+![Логотип магазина](public/Metka-white-logo.png)
