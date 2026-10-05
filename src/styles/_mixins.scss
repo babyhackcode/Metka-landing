@@ -1,0 +1,16 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-manual ($align: center, $justify: center) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin padding-global {
+  padding-block: var(--padding-block);
+  padding-inline: var(--padding-inline);
+}

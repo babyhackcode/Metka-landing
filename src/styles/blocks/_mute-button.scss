@@ -1,0 +1,37 @@
+.mute {
+  &__sound {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    @include flex-center;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  &__button {
+    width: 25px;
+    height: 25px;
+    filter: drop-shadow(1.5px 1.5px 0.1px #FFE212);
+  }
+
+  &__path {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
