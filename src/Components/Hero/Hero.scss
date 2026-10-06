@@ -1,0 +1,53 @@
+.hero {
+  &__inner {
+    position: relative;
+    @include padding-global;
+  }
+
+  &__title {
+    width: 100%;
+
+    img {
+      width: calc(100% + 9px);
+      margin-bottom: 1050px;
+    }
+  }
+
+  &__character {
+    max-width: 100%;
+    width: 35%;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__side-text--left {
+    position: absolute;
+    left: var(--padding-inline);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__side-text--right {
+    position: absolute;
+    right: var(--padding-inline);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__link {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--main-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 5px solid var(--main-color);
+    margin-bottom: 100px;
+  }
+
+  &__quote {
+    width: 100%;
+  }
+}
