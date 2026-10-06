@@ -1,7 +1,17 @@
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
+import path from 'path'
 
-// https://vite.dev/config/
+
 export default defineConfig({
   plugins: [react()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+        @use "${path.resolve('src/styles/helpers/mixins.scss')}" as *;
+        `
+      }
+    }
+  }
 })

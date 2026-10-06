@@ -24,3 +24,20 @@ ___
 
 ### Логотип
 ![Логотип магазина](public/Metka-white-logo.png)
+
+___
+
+### Дополнительные сведения для работы проекта:
+ Проверьте данную настройку в vite.config.js:
+
+```
+css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+        @use "${path.resolve('src/styles/helpers/mixins.scss')}" as *;
+        `
+      }
+    }
+  }
+```

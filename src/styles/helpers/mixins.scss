@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-@mixin flex-manual ($align: center, $justify: center) {
+@mixin flex-manual($align: center, $justify: center) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
