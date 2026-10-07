@@ -24,6 +24,7 @@
   &__links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -34,5 +35,9 @@
     gap: 20px;
     border-bottom: 5px solid var(--white);
     margin-bottom: 100px;
+
+    svg {
+      transform: translateY(3px);
+    }
   }
 }
