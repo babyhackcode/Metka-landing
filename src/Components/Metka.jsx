@@ -16,7 +16,7 @@ function Metka() {
               <Collection />
               <Statement />
               <Cta />
-          </main>git
+          </main>
           <Footer />
         </>
     )
