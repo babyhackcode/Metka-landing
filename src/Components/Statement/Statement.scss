@@ -6,67 +6,77 @@
 
   &__top {
     width: 100%;
-    @include flex-center;
-    gap: 20px;
-    margin-bottom: 100px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+
+  &__bottom {
+    width: 100%;
   }
 
   &__character {
-    flex: 0 0 35%;
+    flex: 0 0 30%;
   }
 
   &__image {
     width: 100%;
+    height: 100%;
   }
 
   &__content {
-    text-align: center;
-    flex: 0 0 60%;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 70%;
+    gap: 70px;
   }
 
   &__title {
-    font-size: 170px;
+    @include fluid-text(195, 46);
+    width: 100%;
+    text-align: right;
   }
 
   &__subtitle {
-    font-size: 56px;
-    font-weight: 300;
+    @include fluid-text(52, 22);
+
+    text-align: right;
+    font-weight: 200;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 100px;
+    width: 100%;
   }
 
   &__item {
-    display: flex;
+    display: grid;
     flex-direction: row;
-    gap: 60px;
-  }
-
-  &__item--wide {
-    display: flex;
-    flex-direction: column;
     gap: 20px;
-
-    .statement__text {
-      max-width: 100%;
-    }
+    width: 100%;
+    height: auto;
   }
 
   &__text {
-    font-size: 70px;
+    @include fluid-text(80, 24);
+
+    text-wrap: nowrap;
     filter: drop-shadow(3px 4px 2px #25252550);
     max-width: 350px;
     width: 100%;
+    min-width: 300px;
   }
 
   &__art {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    object-position: center;
   }
 }
 
@@ -77,8 +87,11 @@
   }
 
   &__red-decoration {
+    @include fluid-text(70, 38);
+
+    text-wrap: pretty;
+    color: red;
     text-decoration: underline;
     font-weight: 900;
-    color: red;
   }
 }

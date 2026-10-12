@@ -7,23 +7,23 @@
   }
 
   &__title {
-    font-size: 200px;
+    font-size: clamp(24px, 15vw, 200px);
     font-weight: 500;
     line-height: 1;
-    margin-bottom: 140px;
+    margin-bottom: clamp(40px, 10vw, 140px);
     filter: drop-shadow(7px 5px 15px #FFFFFF50);
     text-wrap: pretty;
   }
 
   &__subtitle {
-    font-size: 64px;
+    font-size: clamp(24px, 5vw, 64px);
     margin-bottom: 10px;
   }
 
   &__top {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
     gap: 100px;
     margin-bottom: 200px;
   }
@@ -45,12 +45,13 @@
 
 .product {
   &__info {
-    font-size: 40px;
-    margin-top: 10px;
+    font-size: clamp(18px, 2vw, 40px);
+    margin-top: 5px;
   }
 
   &__name {
-    margin-bottom: 6px;
+    margin-bottom: 5px;
+    text-wrap: pretty;
   }
 
   &__image {

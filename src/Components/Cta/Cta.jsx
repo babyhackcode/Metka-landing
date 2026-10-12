@@ -1,5 +1,5 @@
 import './Cta.scss'
-import Links from "./Links.jsx";
+import Links from "../Links/Links.jsx";
 
 function Cta() {
     return (
@@ -14,13 +14,11 @@ function Cta() {
                     <Links
                         className = "cta__link"
                         href = 'https://t.me/mettkka'
-                        color= '--white'
                     >
                         TELEGRAM
                     </Links>
                     <Links
                         className = "cta__link"
-                        color= '--white'
                     >
                         SHOP
                     </Links>

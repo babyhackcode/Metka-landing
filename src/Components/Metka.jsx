@@ -1,15 +1,15 @@
-import MuteButton from "./MuteButton/MuteButton.jsx";
 import Header from "./Header/Header.jsx";
 import Hero from "./Hero/Hero.jsx";
 import Collection from "./Collection/Collection.jsx";
 import Statement from "./Statement/Statement.jsx";
 import Cta from "./Cta/Cta.jsx";
 import Footer from "./Footer/Footer.jsx";
+import DynamicIsland from "./DynamicIsland/DynamicIsland.jsx";
 
 function Metka() {
     return (
         <>
-          <MuteButton />
+          <DynamicIsland />
           <Header />
           <main className="main">
               <Hero />

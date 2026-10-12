@@ -5,46 +5,60 @@
   }
 
   &__title {
-    width: 100%;
+    display: block;
 
     img {
-      width: calc(100% + 9px);
-      margin-bottom: 1050px;
+      width: 100%;
     }
   }
 
   &__character {
-    max-width: 100%;
-    width: 35%;
-    position: absolute;
-    top: 27%;
+    width: clamp(155px, 35%, 100%);
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
+    margin: -12% auto 0;
+    margin-bottom: clamp(30px, 10vw, 200px)
   }
 
   &__side-text--left {
+    height: clamp(224px, 15%, 100%);
     position: absolute;
-    left: var(--padding-inline);
+    left: 10px;
     top: 50%;
     transform: translateY(-50%);
   }
 
   &__side-text--right {
+    height: clamp(224px, 15%, 100%);
     position: absolute;
-    right: var(--padding-inline);
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
   }
 
   &__link {
-    font-size: 64px;
+    font-size: 96px;
     font-weight: 700;
     color: var(--main-color);
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 20px;
     border-bottom: 5px solid var(--main-color);
-    margin-bottom: 100px;
+    margin-bottom: clamp(30px, 10vw, 200px);
+    max-width: 890px;
+    transition: .2s;
+
+    svg {
+      transform: translateY(3px);
+      flex-shrink: 0;
+      max-height: 100%;
+    }
+
+    @include hover {
+      color: #E83333;
+      border-color: #E83333;
+    }
   }
 
   &__quote {

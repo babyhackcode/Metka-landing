@@ -1,5 +1,5 @@
 import './Hero.scss'
-import Links from "../Cta/Links.jsx";
+import Links from "../Links/Links.jsx";
 
 function Hero() {
     return (
@@ -12,7 +12,7 @@ function Hero() {
                 <img className="hero__side-text hero__side-text--left" src="src/assets/images/hero/hero__side-text--left.png" alt="Don't stop find" />
                 <img className="hero__side-text hero__side-text--right" src="src/assets/images/hero/hero__side-text--right.png" alt="Don't stop find" />
                 <Links
-                    className = "cta__link"
+                    className = "hero__link"
                     href = 'https://t.me/mettkka'
                     color = '--black'
                 >

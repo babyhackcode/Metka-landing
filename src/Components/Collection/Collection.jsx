@@ -5,8 +5,8 @@ function Collection() {
         <section className="collection">
             <div className="collection__inner">
                 <h2 className="collection__title">СТИЛЬ ЕСТЬ <br/> НЕ У ВСЕХ.</h2>
+                <h3 className="collection__subtitle">THE FINDS</h3>
                 <div className="collection__gallery">
-                    <h3 className="collection__subtitle">THE FINDS</h3>
                     <div className="collection__top">
                         <article className="product product--large">
                             <div className="product__wrapper">
