@@ -10,6 +10,7 @@ export default defineConfig({
       scss: {
         additionalData: `
         @use "${path.resolve('src/styles/helpers/mixins.scss')}" as *;
+        @use "${path.resolve('src/styles/helpers/media.scss')}" as *;
         `
       }
     }
