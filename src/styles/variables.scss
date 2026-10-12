@@ -4,6 +4,6 @@
   --black: #000000;
 
   // Отступы для внтутреннего контента блоков
-  --padding-inline: 200px;
-  --padding-block: 230px;
+  --padding-inline: clamp(10px, 13vw, 200px);
+  --padding-block: clamp(50px, 15vw, 230px);
 }

@@ -1,3 +1,7 @@
+@mixin fluid-text($max: 32, $min: 16) {
+  font-size: clamp(#{$min}px, #{calc($max / 1920 * 100)}vw, #{$max}px)
+}
+
 @mixin flex-center {
   display: flex;
   align-items: center;
