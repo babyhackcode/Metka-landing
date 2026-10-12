@@ -9,7 +9,7 @@ function Links(props) {
     return (
         <a className={className} href={href} target="_blank" style={{borderBottomColor: `var(${color})`}}>
             {children}
-            <svg width="70" height="60" viewBox="0 0 49 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="100" height="74" viewBox="0 0 49 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M47.7105 20.1777C48.6868 19.2014 48.6868 17.6185 47.7105
                             16.6421L31.8006 0.732245C30.8243 -0.244065 29.2414 -0.244066
                             28.265 0.732245C27.2887 1.70856 27.2887 3.29147 28.265 4.26778L42.4072
