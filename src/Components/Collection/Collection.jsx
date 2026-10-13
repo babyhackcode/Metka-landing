@@ -1,4 +1,10 @@
 import './Collection.scss'
+import topMainImage from '../../assets/images/collection/collection__image-main.jpg'
+import topSideDownImage from '../../assets/images/collection/collection__side-image--down.jpg'
+import topSideUpImage from '../../assets/images/collection/collection__side-image--up.jpg'
+import bottomMainImage from '../../assets/images/collection/collection__bottom-image--main.jpg'
+import bottomLeftImage from '../../assets/images/collection/collection__bottom-image--left.jpg'
+import bottomRightImage from '../../assets/images/collection/collection__bottom-image--right.jpg'
 
 function Collection() {
     return (
@@ -11,7 +17,7 @@ function Collection() {
                         <article className="product product--large">
                             <div className="product__wrapper">
                                 <img className="product__image"
-                                     src="src/assets/images/collection/collection__image-main.jpg"
+                                     src={topMainImage}
                                      alt="Рубашка"/>
                             </div>
                             <div className="product__info">
@@ -23,7 +29,7 @@ function Collection() {
                             <article className="product">
                                 <div className="product__wrapper">
                                     <img className="product__image"
-                                         src="src/assets/images/collection/collection__side-image--up.jpg"
+                                         src={topSideUpImage}
                                          alt="Галстук"/>
                                 </div>
                                 <div className="product__info">
@@ -34,7 +40,7 @@ function Collection() {
                             <article className="product">
                                 <div className="product__wrapper">
                                     <img className="product__image"
-                                         src="src/assets/images/collection/collection__side-image--down.jpg"
+                                         src={topSideDownImage}
                                          alt="ПЛАТОК"/>
                                 </div>
                                 <div className="product__info">
@@ -48,7 +54,7 @@ function Collection() {
                         <article className="product">
                             <div className="product__wrapper">
                                 <img className="product__image"
-                                     src="src/assets/images/collection/collection__bottom-image--left.jpg"
+                                     src={bottomLeftImage}
                                      alt="Кулон"/>
                             </div>
                             <div className="product__info">
@@ -59,7 +65,7 @@ function Collection() {
                         <article className="product product--large">
                             <div className="product__wrapper">
                                 <img className="product__image"
-                                     src="src/assets/images/collection/collection__bottom-image--main.jpg"
+                                     src={bottomMainImage}
                                      alt="Рубашка"/>
                             </div>
                             <div className="product__info">
@@ -70,7 +76,7 @@ function Collection() {
                         <article className="product">
                             <div className="product__wrapper">
                                 <img className="product__image"
-                                     src="src/assets/images/collection/collection__bottom-image--right.jpg"
+                                     src={bottomRightImage}
                                      alt="Лонг-топ"/>
                             </div>
                             <div className="product__info">

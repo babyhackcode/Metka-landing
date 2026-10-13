@@ -1,4 +1,5 @@
 import './Header.scss'
+import headerLogo from '../../assets/logo/White-logo.png';
 
 function Header() {
     return (
@@ -7,7 +8,7 @@ function Header() {
                 <div className="header__sticky">
                     <div className="header__background">
                         <div className="header__container">
-                            <img className='header__logo' src="src/assets/logo/White-logo.png" alt="Metka"/>
+                            <img className='header__logo' src={headerLogo} alt="Metka"/>
                         </div>
                     </div>
                 </div>
