@@ -259,13 +259,17 @@
       color: var(--main-color);
       background-color: var(--white);
       margin-bottom: 20px;
+      transition: all 0.4s ease;
 
       svg {
         width: 64px;
         height: auto;
-        path {
-          fill: var(--main-color) !important;
-        }
+      }
+
+      @include hover {
+        background-color: #E83333;
+        color: var(--white);
+        border-color: #E83333;
       }
     }
   }
