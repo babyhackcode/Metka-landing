@@ -7,7 +7,7 @@ function dynamicIsland() {
     return (
         <div className='dynamic-island'>
             <div className="dynamic-island__inner">
-                <img className="dynamic-island__logo" src={dynamicIslandLogo} alt={metka}/>
+                <img className="dynamic-island__logo" src={dynamicIslandLogo} alt='metka' />
                 <MuteButton />
             </div>
         </div>
