@@ -14,9 +14,7 @@ function Statement() {
                     <div className="statement__content">
                         <h2 className="statement__title">ТЫ НЕ <br/> ОБЯЗАН <br/> БЫТЬ КАК <br/> ВСЕ!</h2>
                         <p className="statement__subtitle subtitle">
-                            <p>
-                                Настоящий стиль когда <br/> на тебя смотрят и думают:
-                            </p>
+                            Настоящий стиль когда <br/> на тебя смотрят и думают:
                             <span className="subtitle__red-decoration"> Daaaaamn. Где он это <br/> нашел?! </span>
                         </p>
                     </div>
