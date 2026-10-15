@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "run-s build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "gsap": "^3.15.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
@@ -24,6 +27,7 @@
     "eslint-plugin-react-refresh": "^0.5.6",
     "gh-pages": "^6.3.0",
     "globals": "^17.12.0",
+    "npm-run-all": "^4.1.5",
     "sass": "^1.105.1",
     "vite": "^8.3.0"
   }
