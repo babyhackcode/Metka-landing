@@ -35,7 +35,7 @@ function dynamicIsland() {
         audioRef.current.muted = isMuted;
 
         audioRef.current.onended = () => {
-            setCurrentTrackIndex((prevIndex) => (prevIndex + 1) % TRACKS.length);
+            setCurrentTrackIndex((prevIndex) => (prevIndex + 1) % playlist.length);
         };
 
         audioRef.current.play().catch((err) => {
