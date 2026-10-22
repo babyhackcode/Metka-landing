@@ -1,6 +1,5 @@
 .dynamic-island {
   width: 300px;
-  height: 60px;
   position: fixed;
   top: 30px;
   left: 50%;
@@ -12,6 +11,7 @@
 
   &__inner {
     padding: 15px 17px;
+    height: 60px;
     background-color: var(--main-color);
     border-radius: 50px;
     display: flex;
@@ -22,5 +22,27 @@
 
   &__logo {
     height: 30px;
+  }
+
+  &__question {
+    @include flex-manual(center, space-between);
+
+    width: 100%;
+    color: var(--white);
+
+    &-button {
+      @include flex-center;
+      gap: 10px;
+
+      button {
+        @include flex-center;
+        @include hover {
+          color: #E83333;
+        }
+        transition: color 0.2s;
+        width: 30px;
+        height: 50px;
+      }
+    }
   }
 }

@@ -1,34 +1,14 @@
 .mute {
-  &__sound {
-    height: 30px;
-    width: 30px;
-    background-color: white;
-    box-shadow: 0 0 5px white;
+  &__button {
+    height: 34px;
+    aspect-ratio: 1;
     @include flex-center;
-    border-radius: 30px;
     cursor: pointer;
     z-index: 1000;
-  }
 
-  &__button {
-    width: 18px;
-    height: 18px;
-    filter: drop-shadow(0.5px 0.5px 1px #92000A);
-  }
-
-  &__path {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-
-  svg {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
+    &-icon {
+      aspect-ratio: 1;
+      filter: drop-shadow(0.5px 0.5px 0.7px var(--white));
+    }
   }
 }
